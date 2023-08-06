@@ -44,7 +44,7 @@ const Header = () => {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 left-0 w-[400px] h-screen bg-white  z-40 duration-300"
+            : "fixed top-0 left-0 w-[270px] h-screen bg-white  z-40 duration-300"
         }
       >
         <AiOutlineClose
