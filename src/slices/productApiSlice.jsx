@@ -1,0 +1,15 @@
+import { POSTS_URL } from "../constants";
+import { apiSlice } from "./apiSlice";
+
+export const productsApiSlice = apiSlice.injectEndpoints({
+  endpoints: (builder) => ({
+    getProducts: builder.query({
+      query: ({ keyword, pageNumber }) => ({
+        url: POSTS_URL,
+        params: { keyword, pageNumber },
+      }),
+      keepUnusedDataFor: 5,
+      providesTags: ["Products"],
+    }),
+  }),
+});

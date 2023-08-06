@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(224, 227, 230);
+}
+
+@layer base {
+  button {
+    @apply border border-gray-200  bg-slate-200 rounded-xl px-5 py-1 hover:bg-violet-400
+     hover:text-gray-900 transition-all duration-300 ease-in-out outline-none;
+  }
+}
